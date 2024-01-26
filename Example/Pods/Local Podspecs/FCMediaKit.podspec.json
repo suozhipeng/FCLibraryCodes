@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "summary": "A short description of FCMediaKit.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/xiaoguai/FCMediaKit",
+  "homepage": "https://github.com/suozhipeng/FCLibraryCodes",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "xiaoguai": "285091999@qq.com"
   },
   "source": {
-    "git": "https://github.com/xiaoguai/FCMediaKit.git",
+    "git": "https://github.com/suozhipeng/FCLibraryCodes.git",
     "tag": "0.1.0"
   },
   "platforms": {

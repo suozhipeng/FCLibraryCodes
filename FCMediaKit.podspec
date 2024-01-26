@@ -30,7 +30,9 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'FCMediaKit/Classes/**/*'
+#  s.source_files = 'FCMediaKit/Classes/**/*'
+  s.source_files = 'FCMediaKit/Classes/**/*', 'lib/*.h'
+  s.vendored_libraries = 'lib/*.a'
   
   # s.resource_bundles = {
   #   'FCMediaKit' => ['FCMediaKit/Assets/*.png']

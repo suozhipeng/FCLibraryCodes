@@ -1,0 +1,6 @@
+framework module FCMediaKit {
+  umbrella header "FCMediaKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

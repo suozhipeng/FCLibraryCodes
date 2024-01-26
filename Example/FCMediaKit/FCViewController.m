@@ -7,6 +7,7 @@
 //
 
 #import "FCViewController.h"
+#import <FCMediaKit/CameraMediakit.h>
 
 @interface FCViewController ()
 
@@ -18,6 +19,22 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        CameraMediakit *handle = [CameraMediakit sharedInstance];
+        [handle setup:^(NSString * _Nonnull rtspPath) {
+            NSString *tmpRTSPPath = [NSString stringWithFormat:@"rtsp://192.168.0.110:8554/%@",rtspPath];
+            NSLog(@"收到的路径是: %@", tmpRTSPPath);
+            
+//            [mediaplayer setMedia:[VLCMedia mediaWithURL:[NSURL URLWithString:tmpRTSPPath]]];
+//            dispatch_async(dispatch_get_main_queue(), ^{
+//                // 高优先级任务
+//                [mediaplayer play];
+//            });
+        }];
+    });
+    
 }
 
 - (void)didReceiveMemoryWarning

@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - FCMediaKit (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - FCMediaKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  FCMediaKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  FCMediaKit: ec422f86e672fa9d10b2808f5323706ca8a1d3b3
+
+PODFILE CHECKSUM: b87d7bfa7203f734359765ac7727b2e6cafe31ee
+
+COCOAPODS: 1.14.3
